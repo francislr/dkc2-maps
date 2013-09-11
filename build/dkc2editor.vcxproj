@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5B14F56C-3C87-4D4C-90BD-82C155B78B17}</ProjectGuid>
+    <RootNamespace>dkc2editor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\animation.cpp" />
+    <ClCompile Include="..\src\bitmap.cpp" />
+    <ClCompile Include="..\src\decompress.cpp" />
+    <ClCompile Include="..\src\dialog.cpp" />
+    <ClCompile Include="..\src\editor.cpp" />
+    <ClCompile Include="..\src\editor_tool.cpp" />
+    <ClCompile Include="..\src\frame.cpp" />
+    <ClCompile Include="..\src\hexedit.cpp" />
+    <ClCompile Include="..\src\level.cpp" />
+    <ClCompile Include="..\src\level_name.cpp" />
+    <ClCompile Include="..\src\level_properties.cpp" />
+    <ClCompile Include="..\src\level_sprite.cpp" />
+    <ClCompile Include="..\src\level_style.cpp" />
+    <ClCompile Include="..\src\level_tilemap.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\hex_editor.cpp" />
+    <ClCompile Include="..\src\rom_file.cpp" />
+    <ClCompile Include="..\src\sprite.cpp" />
+    <ClCompile Include="..\src\sprite_property.cpp" />
+    <ClCompile Include="..\src\stock_sprite.cpp" />
+    <ClCompile Include="..\src\tile.cpp" />
+    <ClCompile Include="..\src\tilemap.cpp" />
+    <ClCompile Include="..\src\undo_buffer.cpp" />
+    <ClCompile Include="..\src\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\animation.h" />
+    <ClInclude Include="..\src\bitmap.h" />
+    <ClInclude Include="..\src\dialog.h" />
+    <ClInclude Include="..\src\editor.h" />
+    <ClInclude Include="..\src\editor_tool.h" />
+    <ClInclude Include="..\src\frame.h" />
+    <ClInclude Include="..\src\hexedit.h" />
+    <ClInclude Include="..\src\level.h" />
+    <ClInclude Include="..\src\level_properties.h" />
+    <ClInclude Include="..\src\level_sprite.h" />
+    <ClInclude Include="..\src\level_style.h" />
+    <ClInclude Include="..\src\level_tilemap.h" />
+    <ClInclude Include="..\src\ref_count.h" />
+    <ClInclude Include="..\src\resource.h" />
+    <ClInclude Include="..\src\hex_editor.h" />
+    <ClInclude Include="..\src\rom_file.h" />
+    <ClInclude Include="..\src\sprite.h" />
+    <ClInclude Include="..\src\sprite_property.h" />
+    <ClInclude Include="..\src\stdafx.h" />
+    <ClInclude Include="..\src\stock_sprite.h" />
+    <ClInclude Include="..\src\tile.h" />
+    <ClInclude Include="..\src\tilemap.h" />
+    <ClInclude Include="..\src\undo_buffer.h" />
+    <ClInclude Include="..\src\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\dkc2editor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\dkicon.ico" />
+    <None Include="..\src\toolbar-disabled.bmp" />
+    <None Include="..\src\toolbar.bmp" />
+    <None Include="dkicon.ico" />
+    <None Include="toolbar-disabled.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

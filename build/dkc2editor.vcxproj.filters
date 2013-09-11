@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Level Editor">
+      <UniqueIdentifier>{d3e607d9-bff4-465c-a971-4a977b32da65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project">
+      <UniqueIdentifier>{1edd62e5-c4fb-4c0e-9cb9-14f8796b0a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GFX Render">
+      <UniqueIdentifier>{3e221891-ecb9-4f7f-bbfb-ed4f1e4a2386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{4b5dd09c-ea70-474a-ace2-6399a0ebf652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{527c24ad-6274-4660-8bba-c30bb57f87e5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\level.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\level_tilemap.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\dialog.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\editor.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\frame.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\editor_tool.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\bitmap.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\animation.cpp">
+      <Filter>GFX Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sprite.cpp">
+      <Filter>GFX Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tile.cpp">
+      <Filter>GFX Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\level_properties.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\level_style.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\decompress.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tilemap.cpp">
+      <Filter>GFX Render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\rom_file.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\sprite_property.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\level_sprite.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\level_name.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hexedit.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\hex_editor.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\stock_sprite.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\undo_buffer.cpp">
+      <Filter>Level Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\window.cpp">
+      <Filter>Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\level.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\level_sprite.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\dialog.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\window.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\frame.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\editor.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\editor_tool.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\bitmap.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\level_tilemap.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sprite.h">
+      <Filter>GFX Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tile.h">
+      <Filter>GFX Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\resource.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ref_count.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\animation.h">
+      <Filter>GFX Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\level_properties.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\level_style.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tilemap.h">
+      <Filter>GFX Render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\rom_file.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stdafx.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\stock_sprite.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\sprite_property.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hexedit.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\hex_editor.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\undo_buffer.h">
+      <Filter>Level Editor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="toolbar-disabled.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\src\toolbar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\src\toolbar-disabled.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="dkicon.ico" />
+    <None Include="..\src\dkicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\dkc2editor.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
