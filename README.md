@@ -1,6 +1,8 @@
 dkc2-maps
 ===========
 
+[![Build status](https://ci.appveyor.com/api/projects/status/5sjye3booyu6qfw6?svg=true)](https://ci.appveyor.com/project/GabLeRoux/dkc2-maps)
+
 A software used to show maps for the game Donkey Kong Country 2. I made this in 2008 and it was sleeping on my hard drive, so I decided to share with the world. Originally it was supposed to be a map editor but I lacked motivation to continue it. So it started to accumulate dust on my hard drive! This project is made in C++ using the Windows API and does not need any dependencies.
 
 Preview
